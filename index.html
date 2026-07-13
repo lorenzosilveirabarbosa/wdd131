@@ -1,59 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <link rel="stylesheet" href="estilos/base.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Fundamentos da Web Dinâmica - Lorenzo Barbosa</title>
-    <meta name="description" content="Meu nome é Lorenzo, essa é minha página inicial, sejam bem-vindos! Mostrarei meus aprendizados e diversas coisas do dia a dia.">
+    <title>Página Inicial de Lorenzo</title>
+    <meta name="description" content="Página inicial de Lorenzo Silveira Barbosa para o curso WDD 131.">
     <meta name="author" content="Lorenzo Silveira Barbosa">
-    <script src="script/obterdatas.js" defer></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="estilos/base.css">
+    <script src="scripts/obterdatas.js" defer></script>
 </head>
 <body>
-    <header>
-      <h1>Curso WDD131 - Desenvolvimento Web</h1>
 
-    <nav>
-        <a href="https://www.linkedin.com/in/seu-perfil" target="_blank">LinkedIn</a>
-        <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
-        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=por&id=p7#p7" target="_blank">Escritura Favorita</a>
-        <a href="#">Projeto Final</a>
-    </nav>
+    <header>
+        <h1><span id="course-title">WDD 131: Fundamentos da Web Dinâmica</span></h1>
+        <nav>
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures?lang=por" target="_blank">Escritura</a>
+            <a href="#" target="_blank">Projeto Final</a>
+        </nav>
     </header>
 
     <main>
-    <h1 class="main-title">Lorenzo Silveira Barbosa</h1>
+        <h1>Lorenzo Silveira Barbosa</h1>
 
-    <section class="card">
-        <h2>Sobre Mim</h2>
-        <div class="card-content">
-            <img src="imagens/perfillorenzo.jpg" alt="Foto de perfil minha - Lorenzo barbosa" width="300">
-            <p>Meu nome é Lorenzo, essa é minha página inicial, sejam bem-vindos! Mostrarei meus aprendizados e diversas coisas do dia a dia.</p>
-            
-            <h3>Sorocaba, São Paulo</h3>
-            <img src="imagens/bandeirasorocaba.jpg" alt="Bandeira da minha cidade natal: Sorocaba" width="300">
-            <p>Sorocaba é uma cidade do interior de São Paulo, localizada a cerca de 100 km da capital. É um importante polo industrial, comercial e tecnológico...</p>
-        </div>
-    </section>
+        <section class="card">
+            <h2>Sobre Mim</h2>
+            <div class="card-content">
+                <img src="imagens/perfillorenzo.jpg" alt="Foto de perfil minha - Lorenzo barbosa" width="300">
+                <p>Meu nome é Lorenzo, essa é minha página inicial, sejam bem-vindos! Mostrarei meus aprendizados e diversas coisas do dia a dia.</p>
+                
+                <h3>Sorocaba, São Paulo</h3>
+                <img src="imagens/bandeirasorocaba.jpg" alt="Bandeira da minha cidade natal: Sorocaba" width="300">
+                <p>Sorocaba é uma cidade do interior de São Paulo, localizada a cerca de 100 km da capital. É um importante polo industrial, comercial e tecnológico, destacando-se pela economia forte, infraestrutura e qualidade de vida. Atualmente, é uma das cidades que mais crescem no estado, oferecendo boas oportunidades de trabalho, estudo e moradia.</p>
+            </div>
+        </section>
 
-    <section class="card">
-        <h2>Recursos Web Dev</h2>
-        <div class="card-content">
-            <ul>
-                <li><a href="https://dev.to" target="_blank">Comunidade Dev.to</a></li>
-                <li><a href="https://www.smashingmagazine.com" target="_blank">Revista Smashing</a></li>
-                <li><a href="https://css-tricks.com" target="_blank">CSS Tricks</a></li>
-                <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
-                <li><a href="https://www.udemy.com" target="_blank">Udemy</a></li>
-            </ul>
-        </div>
-    </section>
-</main>
+        <section class="card">
+            <h2>Recursos Web Dev</h2>
+            <div class="card-content">
+                <ul>
+                    <li><a href="https://dev.to" target="_blank">Comunidade Dev.to</a></li>
+                    <li><a href="https://www.smashingmagazine.com" target="_blank">Revista Smashing</a></li>
+                    <li><a href="https://css-tricks.com" target="_blank">CSS Tricks</a></li>
+                    <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+                    <li><a href="https://www.udemy.com" target="_blank">Udemy</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
 
     <footer>
-    <p>&copy; <span id="anoatual"></span> Lorenzo - São Paulo, Brasil</p>
-    <p id="ultimaModificacao"></p>
-</footer>
+        <p>&copy;<span id="anoatual"></span> 🌸 Lorenzo Silveira Barbosa 🌸 Sorocaba, São Paulo, Brasil</p>
+        <p>Última Modificação: <span id="ultimaModificacao"></span></p>
+    </footer>
 
-    </body>
+</body>
 </html>
