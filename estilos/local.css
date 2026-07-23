@@ -1,0 +1,146 @@
+
+:root {
+  
+  --primary-color: #c8102e;     
+  --secondary-color: #007a3d;   
+  --white: #ffffff;
+  --text-dark: #222222;
+  --bg-card-overlay: rgba(255, 255, 255, 0.9);
+  
+  
+  --font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text-dark);
+  background-color: #f4f4f4;
+  line-height: 1.5;
+}
+
+.main-header {
+  background-color: var(--primary-color);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 4px solid var(--secondary-color);
+}
+
+.main-header h1 {
+  font-size: 2rem;
+}
+
+.hero-image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.info-card {
+  background-color: var(--white);
+  padding: 1.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.info-card h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--secondary-color);
+  padding-bottom: 0.25rem;
+}
+
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-item dt {
+  font-weight: bold;
+}
+
+
+.weather-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.weather-icon img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Rodapé */
+.main-footer {
+  background-color: var(--primary-color);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+}
+
+
+@media (min-width: 768px) {
+  
+  
+  .page-container {
+    position: relative;
+    width: 100%;
+  }
+
+  
+  .weather-icon {
+    display: none;
+  }
+
+ 
+  .weather-card h2::after {
+    content: " 🌤️";
+    font-size: 1.3rem;
+  }
+
+  
+  .info-card {
+    position: absolute;
+    background-color: var(--bg-card-overlay);
+    width: 280px;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+  }
+
+  .info-card h2 {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 0.4rem;
+    font-size: 1.1rem;
+    border-radius: 3px;
+    border: none;
+  }
+
+
+  .data-card {
+    top: 30px;
+    left: 30px;
+  }
+
+  
+  .weather-card {
+    bottom: 30px;
+    right: 30px;
+  }
+}

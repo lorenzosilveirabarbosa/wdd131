@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madagascar - Informações e Clima</title>
+    
+    <link rel="stylesheet" href="estilos/local.css">
+
+    <script src="scripts/local.js" defer></script>
+</head>
+<body>
+
+    <header class="main-header">
+        <h1>Madagascar</h1>
+    </header>
+
+    <main class="page-container">
+        
+        <figure class="hero-image-container">
+            <picture>
+                <source media="(min-width: 768px)" srcset="imagens/madagascar-small.webp">
+                
+                <img src="imagens/madagascar-small.webp" alt="Lêmure em Madagascar" class="hero-image">
+            </picture>
+        </figure>
+
+        <section class="info-card data-card">
+            <h2>Data</h2>
+            <dl class="info-list">
+                <div class="info-item"><dt>Area:</dt> <dd>587,041 sq km</dd></div>
+                <div class="info-item"><dt>Population:</dt> <dd>27,691,018</dd></div>
+                <div class="info-item"><dt>Capital:</dt> <dd>Antananarivo</dd></div>
+                <div class="info-item"><dt>Languages:</dt> <dd>Malagasy, French</dd></div>
+                <div class="info-item"><dt>Currency:</dt> <dd>Malagasy Ariary</dd></div>
+                <div class="info-item"><dt>Time Zone:</dt> <dd>UTC+3</dd></div>
+                <div class="info-item"><dt>Calling Code:</dt> <dd>+261</dd></div>
+                <div class="info-item"><dt>Internet TLD:</dt> <dd>.mg</dd></div>
+            </dl>
+        </section>
+
+        <section class="info-card weather-card">
+            <h2>Weather</h2>
+            
+            <div class="weather-icon">
+                <img src="imagens/nublado.svg" alt="Ícone de clima parcialmente nublado">
+            </div>
+
+            <dl class="info-list">
+                <div class="info-item"><dt>Temperature:</dt> <dd>10 °C</dd></div>
+                <div class="info-item"><dt>Conditions:</dt> <dd>Partly Cloudy</dd></div>
+                <div class="info-item"><dt>Wind:</dt> <dd>5 km/h</dd></div>
+                <div class="info-item"><dt>Wind Chill:</dt> <dd id="windChill"></dd></div>
+            </dl>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+       
+        <p>&copy;<span id="year"></span> | Lorenzo Silveira Barbosa | Madagascar</p>
+        
+        <p>Última modificação: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+</html>
